@@ -28,3 +28,16 @@ for(aluno of listaAlunos){
     console.log(`A média do aluno ${aluno.nome} é ${media}`);
     document.write(`${media}`)
 }
+
+//VOCÊ PRECISA DESENVOLVER UM ALGORITMO QUE FAÇA UM SORTEIO DE BINGO//
+
+const sorteio=[];
+while(sorteio.length <6){
+    let numero1 = Math.ceil(Math.random() * 60)
+    if(!sorteio.includes(numero1)){
+        sorteio.push(numero1)
+    }
+}
+
+sorteio.sort((a,b)=>a-b);
+console.log(sorteio)
